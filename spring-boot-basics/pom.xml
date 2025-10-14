@@ -2,16 +2,21 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>com.ghostdev7</groupId>
     <artifactId>spring-boot-essentials</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
+
   <groupId>com.ghostdev7</groupId>
   <artifactId>spring-boot-basics</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>spring-boot-basics</name>
-  <url>http://maven.apache.org</url>
+  <packaging>jar</packaging>
+
+  <name>Spring Boot Todo API</name>
+  <description>Todo REST API with Spring Boot</description>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -25,4 +30,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+  </build>
 </project>
