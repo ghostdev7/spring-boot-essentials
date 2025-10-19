@@ -1,3 +1,13 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.gradle.enabled": true,
+    "java.import.maven.enabled": true,
+    "java.referencesCodeLens.enabled": true,
+    "java.completion.enabled": true,
+    "java.completion.favoriteStaticMembers": [
+        "org.springframework.boot.SpringApplication.run",
+        "org.springframework.boot.SpringApplication.exit"
+    ],
+    "java.format.enabled": true,
+    "editor.formatOnSave": true,
 }
